@@ -7,10 +7,11 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = "__all__"
 
-    def validate(self, attrs):
-        validate_author_age(attrs["author"])
-        validate_post_title(attrs["title"])
-        return attrs
+    def validate(self, data):
+        validate_author_age(data["author"])
+        validate_post_title(data["title"])
+        return data
+
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
