@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+
 class User(AbstractUser):
     """
     Кастомный пользователь с расширенными полями профиля (телефон и дата рождения).
@@ -11,7 +12,7 @@ class User(AbstractUser):
         blank=False,
         null=False,
         error_messages={
-            'unique': "Пользователь с таким email уже существует.",
+            "unique": "Пользователь с таким email уже существует.",
         },
     )
     phone = models.CharField(max_length=20)

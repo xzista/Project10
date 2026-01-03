@@ -1,6 +1,8 @@
 from rest_framework import serializers
+
 from .models import User
-from .services import validate_password, validate_email
+from .services import validate_email, validate_password
+
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
