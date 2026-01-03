@@ -3,7 +3,7 @@ name = "project10"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Xziste",email = "you@example.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
@@ -12,8 +12,8 @@ dependencies = [
     "djangorestframework (>=3.16.1,<4.0.0)",
     "psycopg2-binary (>=2.9.11,<3.0.0)",
     "pillow (>=12.0.0,<13.0.0)",
-    "django-filter (>=25.2,<26.0)",
-    "python-dotenv (>=1.2.1,<2.0.0)"
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "python-dateutil (>=2.9.0.post0,<3.0.0)"
 ]
 
 

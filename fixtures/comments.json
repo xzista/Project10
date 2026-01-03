@@ -1,0 +1,35 @@
+[
+    {
+        "model": "posts.comment",
+        "pk": 1,
+        "fields": {
+            "post": 1,
+            "author": 3,
+            "text": "Отличный пост!",
+            "created_at": "2024-01-01T13:00:00Z",
+            "updated_at": "2024-01-01T13:00:00Z"
+        }
+    },
+    {
+        "model": "posts.comment",
+        "pk": 2,
+        "fields": {
+            "post": 1,
+            "author": 1,
+            "text": "Еще комментарий",
+            "created_at": "2024-01-01T14:00:00Z",
+            "updated_at": "2024-01-01T14:00:00Z"
+        }
+    },
+    {
+        "model": "posts.comment",
+        "pk": 3,
+        "fields": {
+            "post": 2,
+            "author": 3,
+            "text": "Интересно, жду продолжения",
+            "created_at": "2024-01-02T13:00:00Z",
+            "updated_at": "2024-01-02T13:00:00Z"
+        }
+    }
+]
