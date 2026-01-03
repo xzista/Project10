@@ -9,7 +9,13 @@ class PostViewSet(ModelViewSet):
     serializer_class = PostSerializer
     permission_classes = [IsAuthenticatedOrReadOnly, IsAdminOrOwner]
 
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
+
 class CommentViewSet(ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [IsAuthenticatedOrReadOnly, IsAdminOrOwner]
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
