@@ -1,0 +1,24 @@
+[
+    {
+        "model": "posts.post",
+        "pk": 1,
+        "fields": {
+            "title": "Первый пост",
+            "text": "Текст первого поста",
+            "author": 2,
+            "created_at": "2024-01-01T12:00:00Z",
+            "updated_at": "2024-01-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 2,
+        "fields": {
+            "title": "Второй пост",
+            "text": "Еще один пост",
+            "author": 2,
+            "created_at": "2024-01-02T12:00:00Z",
+            "updated_at": "2024-01-02T12:00:00Z"
+        }
+    }
+]
