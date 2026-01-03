@@ -1,12 +1,15 @@
 from rest_framework import serializers
-from .models import Post, Comment
+
+from .models import Comment, Post
 from .services import validate_author_age, validate_post_title
+
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = "__all__"
         read_only_fields = ("author",)
+
 
 class CommentShortSerializer(serializers.ModelSerializer):
     class Meta:
