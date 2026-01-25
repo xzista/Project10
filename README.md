@@ -1,4 +1,5 @@
-# Posts & Comments API
+# Posts & Comments API 
+## Социальная платформа для публикаций (Blog API)
 
 Задание на Django + DRF.
 
