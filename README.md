@@ -69,7 +69,7 @@ API позволяет пользователям регистрироватьс
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/xzista/Project10
+git clone https://github.com/xzista/Blog-API
 cd project
 ```
 
